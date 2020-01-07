@@ -42,6 +42,6 @@ We kunnen nu het verkeer in de geselecteerd interface bekijken via protocol-disc
 >exit
 >
 >
->!!voorbeel outout foto
+>![](top5Nbar.png)
 
 
