@@ -66,7 +66,7 @@ In Hyper-V onder de "Acties" menu rechtsboven, kiezen we de optie "Nieuw" en daa
 >
 
 
-###2. Install Debian###
+##2. Install Debian##
 ![](install.png)
 
 
@@ -114,17 +114,12 @@ deze is denk ik fout,ik moet opniew ja
 #####Installatie afronden #####
 ![](install15.png)
 
-#####Connect met VM #####
->!!gebruik *ip a* op de Machine om de ip van de machine weer te geven. die  ip is de address die we moeten gebruike om te connecteren via ssh
-![](ipAforIp.png)
+#####Herstart de machine #####
+>Nu is de installatie voltooid is kunnen we de pc herstarten.
+>![](graylogAan.png)
 
 
-### 3. controleer connectie###
-
-eerst via ssh connecteren 
-en dan inloggen 
-
-
+**Voor we een verbinding kunnen make met de Machine via SSH moeten we een twee belangrijke taken verrichten. Ten eerste moesten we een virtuele switch aan maken ten tweede moeten we een static IP aan de machine geven. Die taken zullen verricht worden in het document "VswitchStaticIP.pdf".**
 
 
 
