@@ -15,7 +15,7 @@ ___
 -	Oracle Java SE 8(OpenJDK 8 is ook goed; Kies de laatste stabiele versie)
 
 
-###1.Intalleer een Linux Distribution###
+###1.Installeer een Linux Distribution###
 We zullen gebruik maken Hyper-V en netinst voor het installeren van onze vertuele PC's. Bij het aan maken van de vertuele pc is het belangerijk dat we meer dan 4GB RAM kiezen anders Zullen Elasticsearch en JAVA niet goed werken.
 
 ---
@@ -39,7 +39,7 @@ We zullen gebruik maken Hyper-V en netinst voor het installeren van onze vertuel
 
 
 
-###2. Intall MongoDB op de Virtual pc###
+###2. Install MongoDB op de Virtual pc###
 `$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4``
 
 **Als we een error krijgen over de "dirmngr" moet je eerste de dirmngr installeren met *apt-get install dirmngr -y***
@@ -64,7 +64,7 @@ configureer MongoDB zodat hij bij de boot van de systeem automatish aan gaat.
 >root@graylogDebian:sudo systemctl restart mongod.service
 
 
-###3. Intall Elasticsearch op de Virtual pc###
+###3. Install Elasticsearch op de Virtual pc###
 
 >root@graylogDebian:wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 >
@@ -104,7 +104,7 @@ Verander de **cluster name** naar `graylog`, haal de regel uit commentaar door d
 
 
 
-###3. Intall Graylog configuraties repositories en graylog zelf###
+###3. Install Graylog configuraties repositories en graylog zelf###
 
 >root@graylogDebian:wget https://packages.graylog2.org/repo/packages/graylog-3.1-repository_latest.deb
 >
@@ -140,11 +140,11 @@ kopieer de code die net gegenreerd is en voet het in de conf file als "password_
 ####### 4. Voeg root\_password\_sha2 toe#######
 
 Plak de sha256 code die in stap `1. Maak een root_password_sha2` gemaakt is in de file op de juiste plaats.
-
+![](rrot&secretpassGarylogFile.png)
 ####### 5. verander de http\_bind\_address#######
 
 om te kunnen connecteren met Graylog moet de `http_bind_address` gezet worden naar de **public host name** of public ip address van een machine waar je toegang op heb.
-
+![](bindAddress.png)
 
 ##### Herstart Graylog #####
 

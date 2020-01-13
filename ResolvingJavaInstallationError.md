@@ -100,7 +100,7 @@ Nu de JAVA installaite voltooid is, kunnen we  de installatie controlleren door 
 
 >root@graylogDebian:java -version
 >
->!!!uitput van mijn versie(afbeelding)
+>![](javaVersion.png)
 
 
 ###5.JAVA Environment Variables###
@@ -123,6 +123,8 @@ Voeg de volgende waardes toe en sla de document op.
 >export JAVA_HOME=/usr/lib/jvm/jdk-13.0.1
 >
 >export DERBY_HOME=/usr/lib/jvm/jdk-13.0.1/db
+>
+>![](javaVaribelen.png)
 
 Sluit het script, en de command line run je de volgende commando om de setting op te laden in deze  shell
 

@@ -80,12 +80,12 @@ In Hyper-V onder de "Acties" menu rechtsboven, kiezen we de optie "Nieuw" en daa
 #####Kies toetsenboord layout #####
 ![](install4.png)
 
->!!! In de vijfde moet de gebruikers naam en passwoord ingesteld. in sommige gevallen is het niet nodig om een aparte user aantemaken, daarom heb ik alleen een root user . Als dit niet het geval is , maak dan een user aan.
+>In de vijfde moet de gebruikers naam en wachtwoord ingesteld. In sommige gevallen is het niet nodig om een aparte gebruiker aan te maken, daarom heb ik alleen een root gebruiker. Als dit niet het geval is, maak dan een gebruiker aan.
 
 #####Schijven indelen #####
 ![](install7.png)
 
->!!!Het is mogelijk de schijf op verachillende mannieren inte delen. Ik kies voor de eerste optie.
+>Het is mogelijk de schijf op verschillende manieren in te delen. Ik kies voor de eerste optie.
 ![](install8.png)
 
 #####Schijven indelen opslaan #####
@@ -94,11 +94,11 @@ In Hyper-V onder de "Acties" menu rechtsboven, kiezen we de optie "Nieuw" en daa
 >![](install10.png)
 
 #####Extra installatie pakket #####
-> !!in de stap word er gevraagd of u nog een andere installatie  bron heeft voor extra instalatie. kies *nee*. omdat we network-based installatie doen hallen we alle exte instalatie van de internet nietvan een installatie-CD etc.
+> In de stap word er gevraagd of u nog een andere installatie bron heeft voor extra installatie. Kies *nee*. Omdat we network-based installatie doen hallen we alle extra installatie van het internet, niet van een installatie-cd etc.
 ![](install11.png)
 
-#####Schijven indelen #####
-deze is denk ik fout,ik moet opniew ja
+#####Pakketbeheer #####
+>Kies  **ja**
 ![](install12.png)
 
 #####package usage survey #####
@@ -108,8 +108,9 @@ deze is denk ik fout,ik moet opniew ja
 #####Schijven indelen #####
 >
 >![](install14.png)
->!!!Nu kiezen we de *standaard systeem .... en SSH serve* zodat we met SSH-client kunnen connecteren
->![](afbeelding van de selectie ssh,standaard..)
+>
+>Hierna krijgen we een scherm met verchillende *software installatie* opties.
+>we zorgen er voor dat alleen **SSH Server** en **Standaard Systeem Utilities** is aangeduid.
 
 #####Installatie afronden #####
 ![](install15.png)
