@@ -1,4 +1,4 @@
-##Network Based Application Recognition##
+#Network Based Application Recognition#
 
 
 
@@ -7,7 +7,7 @@ ___
 ___
 
 
-###Configure Nbar Protocol Discovery###
+##Configure Nbar Protocol Discovery##
 
 ####1. Enabling Protocol Discovery####
 
