@@ -12,18 +12,23 @@
 #####Maak Switch aan#####
 >In de optie gedeelte kies je *Create New Virtual Switch*. Daarna kiezen we voor *Extern*, dit is heel belangrijk. Druk vervolgens *virtuele switch maken*
 >
->![](virtualSwitch1.png)
+>![](virtualSwitch11.png)
+>
 
 
 #####Naam en verbindingstype#####
 >Geef het een naam, beste werkwijze is eerste het type virtuele switch(External), dan de naam. Druk op *Toepassen* om het proces te vervolledigen.
 >
->![](virtualSwitch2.png)
+>![](virtualSwitch21.png)
+>
+>
 
 #####MAC Address#####
 > Ga naar de instellingen van de VM en kies *Netwerkadapter*. Daarna kiest u voor de *Geavanceerde functies*. Zorg ervoor dat *Statisch* is aangeduid onder de optie *MAC-adres*
 >
->![](virtualSwitch3.png)
+>![](virtualSwitch31.png)
+>
+>
 
 
 
@@ -32,15 +37,19 @@
 #####Start Virtual Machine#####
 >We gaan dit keer onze VM niet via SSH verbinden omdat hij een dynamische IP van de DHCP krijgt. Momenteel weten we iet elke adres hij heeft. Start de VM op.
 >
-![](graylogAan.png)
+![](graylogAan1.png)
+
 
 #####Login#####
 >Log in de VM met de gemaakte gebruiker en wachtwoord.
 >
->![](loginserver.png)
+>![](loginserver1.png)
 >
 >
->![](loginserver2.png)
+>
+>
+>![](loginserver21.png)
+>
 
 #####Controleer IP#####
 >Om het adres van onze VM te krijgen doen we het commando *ip -a*. Onze Ip is in het onderdeel *eth0* onder de naam *inet*. Het is een adres die door de DHCP gegeven is. Als we onze VM uit en aan doen, zal het een ander adres zijn.
@@ -96,7 +105,18 @@
 >
 >![](loginSshSucses.png)
 >
+
+
+##Login met UI##
+>Nu de Graylog configuratie in orde zijn en we kunnen inloggen via onze VM en via een andere toestel met gebruik van SSH, gaan we inloggen via de Grafische UI.
 >
+> **Zorg ervoor dat de VM aan is**
+> 
+> Surf naar de VM via een web Browser. Hiervoor moeten we naar de IP-adres surfen die we aan de machine gegeven hebben met het poortnummer. **http://10.20.120.9:9000**
+> 
+> ![](loginserverGraylog.png)
+> 
+> Bij gebruiker gebruik je **admin** en bij wachtwoord jou **userpassword** van de VM.
 
 
 

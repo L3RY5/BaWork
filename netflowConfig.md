@@ -3,7 +3,7 @@
 
 ---
 
->Netflow is een netwerk protocol die informatie verzameld en een toezicht houdt over het verkeersstroom van het netwerk . Netflow is ontwerpen door Cisco en werd in de 1996 beschikbaar gesteld op de Cisco routers. Netflow kan geconfigureerd worden om het verkeer van een interface in gaten te houden. Er is een mogelijkheid om alleen de binnenkomende en/of uitgaande verkeer op die interface te monitoren. In het document *nbarConfig.pdf* hebben het over Nbar gesproken, meer uitleg over de verschillen tussen Nbar en Netflow is te vinden in document **. Met Netflow krijgen we een weergave van de volume, de afkomst en bestemming en hoeveel verkeer in het netwerk gegeneerd word door die pakketten.
+>Netflow is een netwerk protocol die informatie verzameld en een toezicht houdt over het verkeersstroom van het netwerk . Netflow is ontwerpen door Cisco en werd in de 1996 beschikbaar gesteld op de Cisco routers. Netflow kan geconfigureerd worden om het verkeer van een interface in gaten te houden. Er is een mogelijkheid om alleen de binnenkomende en/of uitgaande verkeer op die interface te monitoren. In het document *nbarConfig.pdf* hebben het over Nbar gesproken, meer uitleg over de verschillen tussen Nbar en Netflow gaan we in een andere document bespreken. Met Netflow krijgen we een weergave van de volume, de afkomst en bestemming en hoeveel verkeer in het netwerk gegeneerd word door die pakketten.
 
 ---
 

@@ -130,7 +130,7 @@ Sluit het script, en de command line run je de volgende commando om de setting o
 
 `root@graylogDebian:source /etc/profile.d/jdk.sh`
 
-Na de succesvolle installatie kunnen we terug gaan naar de installatie van graylog. We gaan veder vanaf het deel "2.Intall MongoDB op de Virtual pc"
+**Na de succesvolle installatie kunnen we terug gaan naar de installatie van graylog. We gaan veder vanaf het deel "2.Intall MongoDB op de Virtual pc"**
 
 
 

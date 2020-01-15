@@ -105,7 +105,7 @@ In Hyper-V onder de "Acties" menu rechtsboven, kiezen we de optie "Nieuw" en daa
 >kies nee voor de enquête
 ![](install13.png)
 
-#####Schijven indelen #####
+#####Software selectie #####
 >
 >![](install14.png)
 >

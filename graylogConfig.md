@@ -8,7 +8,7 @@ ___
 
 
 
-###requirements###
+##requirements##
 -	Linux distribution (Debian Linux, Ubuntu Linux, or CentOS recommended)
 -	Elasticsearch 5 or 6
 -	MongoDB 3.6 or 4.0
@@ -24,7 +24,7 @@ We zullen gebruik maken Hyper-V en netinst voor het installeren van onze vertuel
 
 ---
 
-#####Linux Updaten en  extra packetten installeren#####
+####Linux Updaten en  extra packetten installeren####
 
 >root@graylogDebian:sudo apt update && sudo apt upgrade
 >
@@ -72,13 +72,13 @@ configureer MongoDB zodat hij bij de boot van de systeem automatish aan gaat.
 >
 >root@graylogDebian:sudo apt update && sudo apt install elasticsearch-oss
 
-##### Pas de Elasticsearch configuratie file aan #####
+#### Pas de Elasticsearch configuratie file aan ####
 
-####### 1. Install vim Editor#######
+##### 1. Install vim Editor#####
 
 >root@graylogDebian:apt install vim -y
 
-####### 2. Pas de configuratie file aan#######
+##### 2. Pas de configuratie file aan#####
 
 Open met vim de file in  `/etc/elasticsearch/elasticsearch.yml` 
 
@@ -94,7 +94,7 @@ Verander de **cluster name** naar `graylog`, haal de regel uit commentaar door d
 >
 
 
-##### Herstart Elasticsearch #####
+#### Herstart Elasticsearch ####
 
 >root@graylogDebian:sudo systemctl daemon-reload
 >
@@ -113,11 +113,11 @@ Verander de **cluster name** naar `graylog`, haal de regel uit commentaar door d
 >root@graylogDebian:sudo apt update && sudo apt install graylog-server
 
 
-##### Pas de Graylog configuratie file aan #####
+#### Pas de Graylog configuratie file aan ####
 
 We moete een paar dingen aan passen in de `server.conf`. De `password_secret` en `root_password_sha2` moeten geconfigureerd worden , dit is verplicht anders zal Graylog **niet** starten. Volg de volgende stampen om dit in orde te krijgen.
 
-####### 1. Maak een root\_password\_sha2 #######
+##### 1. Maak een root\_password\_sha2 #####
 
 >root@graylogDebian:echo -n "Enter Password: " && head -1 </dev/stdin | tr -d '\n' | sha256sum | cut -d" " -f1
 >
@@ -125,23 +125,23 @@ We moete een paar dingen aan passen in de `server.conf`. De `password_secret` en
 
 Jou wachtwoord word geincrypteerd met sha256. de Geincrypteerde code copieer je naar een notpad.
 
-####### 2. Ga naar de server.conf#######
+##### 2. Ga naar de server.conf#####
 
 >root@graylogDebian:vim /etc/graylog/server/server.conf
 
 
-####### 3. Voeg password\_secret toe#######
+##### 3. Voeg password\_secret toe#####
 
 Maak een tweede comandline open. Genereer de password_secret met de volgende commando:
 >root@graylogDebian:pwgen -N 1 -s 96
 
 kopieer de code die net gegenreerd is en voet het in de conf file als "password_secret"
 
-####### 4. Voeg root\_password\_sha2 toe#######
+##### 4. Voeg root\_password\_sha2 toe#####
 
 Plak de sha256 code die in stap `1. Maak een root_password_sha2` gemaakt is in de file op de juiste plaats.
 ![](rrot&secretpassGarylogFile.png)
-####### 5. verander de http\_bind\_address#######
+##### 5. verander de http\_bind\_address#####
 
 om te kunnen connecteren met Graylog moet de `http_bind_address` gezet worden naar de **public host name** of public ip address van een machine waar je toegang op heb.
 ![](bindAddress.png)
