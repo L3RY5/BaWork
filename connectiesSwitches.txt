@@ -1,3 +1,4 @@
+copy system:running-config tftp://10.20.120.50/DocumentNaam.txt
 
 10.20.1.1  : FL1-LR_Core_C3560
 10.20.1.2  : LGL-FL2-A213-Dist-C3560v2-24p-Poe
